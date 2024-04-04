@@ -76,7 +76,7 @@ class MuseTalkRun:
     def run(self, video_path,audio_path,bbox_shift,batch_size):
         parser = argparse.ArgumentParser()
         parser.add_argument("--bbox_shift",type=int, default=bbox_shift)
-        parser.add_argument("--result_dir", default=f'{comfy_path}/output/video', help="path to output")
+        parser.add_argument("--result_dir", default=f'{comfy_path}/output', help="path to output")
 
         parser.add_argument("--fps",type=int, default=25)
         parser.add_argument("--batch_size",type=int, default=batch_size)
